@@ -1,4 +1,4 @@
-![Uploading anomaly_detected.png…]()
+![anomaly_detected](https://github.com/user-attachments/assets/8f299cba-7ed0-4001-a303-3f1104bdf791)
 
 
 https://github.com/user-attachments/assets/f4862961-60ba-4638-93e1-50d46acf0eee
