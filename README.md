@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/f4862961-60ba-4638-93e1-50d46acf0eee
+
 # Anomaly Detection in Surveillance Videos
 
 This project demonstrates real-time object detection in surveillance videos using TensorFlow's Object Detection API with a pre-trained SSD MobileNet V2 model. The system can detect and classify objects in video streams, which can be extended for anomaly detection scenarios.
