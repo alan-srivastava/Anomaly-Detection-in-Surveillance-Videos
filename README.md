@@ -5,9 +5,13 @@ https://github.com/user-attachments/assets/f4862961-60ba-4638-93e1-50d46acf0eee
 
 ✨ Features
 🎯 Real-time object detection from video streams
+
 ⚙️ Based on SSD MobileNet V2 320x320 (COCO dataset)
+
 🖼️ Bounding boxes & confidence scores overlay
+
 🎚️ Configurable detection threshold
+
 🚀 GPU acceleration support (for better performance)
 
 📦 Tech Stack
@@ -17,7 +21,9 @@ OpenCV
 TensorFlow Object Detection API
 
 📥 Installation
+
 Clone the repository
+
 git clone https://github.com/your-username/anomaly-detection-surveillance.git
 cd anomaly-detection-surveillance
 Install dependencies
@@ -38,10 +44,15 @@ Use another model
 Modify MODEL_DATE and MODEL_NAME at the top of detect_anomalies.py.
 
 🔍 Extend for Anomaly Detection
+
 This project can be enhanced to detect anomalies, such as:
+
 🧭 Behavior Analysis: Track object motion for irregular patterns
+
 🔢 Object Counting: Detect crowding or traffic congestion
+
 🚫 Zone Monitoring: Alert when objects enter restricted areas
+
 🎒 Abandoned Object Detection: Identify items left unattended
 
 📚 Model Info
