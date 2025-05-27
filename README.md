@@ -1,76 +1,66 @@
+🧠 Overview
+This project demonstrates real-time object detection in surveillance videos using TensorFlow's Object Detection API with a pre-trained SSD MobileNet V2 model. It forms the foundation for detecting anomalies by identifying unusual patterns in surveillance footage.
 ![anomaly_detected](https://github.com/user-attachments/assets/8f299cba-7ed0-4001-a303-3f1104bdf791)
-
-
 https://github.com/user-attachments/assets/f4862961-60ba-4638-93e1-50d46acf0eee
 
-DEPLOYED LINK (https://alan-srivastava.github.io/Anomaly-Detection-in-Surveillance-Videos/)
+✨ Features
+🎯 Real-time object detection from video streams
+⚙️ Based on SSD MobileNet V2 320x320 (COCO dataset)
+🖼️ Bounding boxes & confidence scores overlay
+🎚️ Configurable detection threshold
+🚀 GPU acceleration support (for better performance)
 
-# Anomaly Detection in Surveillance Videos
+📦 Tech Stack
+Python 3.7+
+TensorFlow 2.x
+OpenCV
+TensorFlow Object Detection API
 
-This project demonstrates real-time object detection in surveillance videos using TensorFlow's Object Detection API with a pre-trained SSD MobileNet V2 model. The system can detect and classify objects in video streams, which can be extended for anomaly detection scenarios.
-
-## Features
-
-- Real-time object detection in video streams
-- Uses SSD MobileNet V2 320x320 model trained on COCO dataset
-- Visualizes detected objects with bounding boxes and confidence scores
-- Configurable detection threshold
-- GPU acceleration support
-
-## Prerequisites
-
-- Python 3.7 or higher
-- TensorFlow 2.x
-- OpenCV
-- TensorFlow Object Detection API
-
-## Installation
-
-1. Clone this repository:
-   git clone https://github.com/your-username/anomaly-detection-surveillance.git
-   cd anomaly-detection-surveillance
-Install the required packages:
-
+📥 Installation
+Clone the repository
+git clone https://github.com/your-username/anomaly-detection-surveillance.git
+cd anomaly-detection-surveillance
+Install dependencies
 pip install -r requirements.txt
-The necessary model files will be automatically downloaded when you first run the script.
+✅ The model files are downloaded automatically when the script is first run.
 
-Usage
-Place your surveillance video file in the project directory (rename it to sample_video_1.mp4 or modify the code to point to your file).
+▶️ Usage
+Place your video file (e.g. sample_video_1.mp4) in the project directory.
 
-*Run the detection script:
+Run the detection script:
 python detect_anomalies.py
 
+⚙️ Customization
+Change detection threshold
+Edit min_score_thresh in visualize_boxes_and_labels_on_image_array(...).
 
-*Customization
-To change the detection threshold, modify the min_score_thresh parameter in the visualize_boxes_and_labels_on_image_array function call.
-To use a different model, update the MODEL_DATE and MODEL_NAME variables at the top of the script.
-You can extend the code to analyze detection patterns over time for anomaly detection.
+Use another model
+Modify MODEL_DATE and MODEL_NAME at the top of detect_anomalies.py.
 
-Extending for Anomaly Detection
-This project provides the foundation for building an anomaly detection system. Potential extensions include:
-Behavior Analysis: Track object movements over time to detect unusual patterns
-Object Counting: Monitor crowd sizes or vehicle counts for abnormal situations
-Zone Monitoring: Detect when objects enter restricted areas
-Abandoned Objects: Identify stationary objects that remain in place for too long
+🔍 Extend for Anomaly Detection
+This project can be enhanced to detect anomalies, such as:
+🧭 Behavior Analysis: Track object motion for irregular patterns
+🔢 Object Counting: Detect crowding or traffic congestion
+🚫 Zone Monitoring: Alert when objects enter restricted areas
+🎒 Abandoned Object Detection: Identify items left unattended
 
-Model Information
-The project uses the ssd_mobilenet_v2_320x320_coco17_tpu-8 model from TensorFlow's Model Zoo. This model provides a good balance between speed and accuracy for real-time applications.
+📚 Model Info
+Model: ssd_mobilenet_v2_320x320_coco17_tpu-8
+Source: TensorFlow Model Zoo
+✅ Balance of speed and accuracy for real-time applications
 
-Performance Notes
-The system performs best with GPU acceleration
+🚀 Performance Tips
+GPU recommended for real-time frame rates
 
-On CPUs, you may need to reduce the input resolution for real-time performance
-Frame processing time depends on hardware capabilities
+For CPU users, lower input resolution to improve speed
 
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements.
+📄 License
+Licensed under the MIT License
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+🤝 Contributing
+Got an idea or improvement? Feel free to open an issue or submit a pull request!
 
-### Additional recommendations:
-
-1. Create a `requirements.txt` file with all the dependencies:
+📑 requirements.txt
 tensorflow>=2.0
 opencv-python
 numpy
