@@ -1,8 +1,8 @@
 🧠 Overview
 This project demonstrates real-time object detection in surveillance videos using TensorFlow's Object Detection API with a pre-trained SSD MobileNet V2 model. It forms the foundation for detecting anomalies by identifying unusual patterns in surveillance footage.
 
-![anomaly_detected]
-(https://github.com/user-attachments/assets/8f299cba-7ed0-4001-a303-3f1104bdf791)
+
+![anomaly_detected](https://github.com/user-attachments/assets/8f299cba-7ed0-4001-a303-3f1104bdf791)
 https://github.com/user-attachments/assets/f4862961-60ba-4638-93e1-50d46acf0eee
 
 ✨ Features
