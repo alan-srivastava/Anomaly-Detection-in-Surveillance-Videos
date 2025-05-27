@@ -37,27 +37,20 @@ The necessary model files will be automatically downloaded when you first run th
 Usage
 Place your surveillance video file in the project directory (rename it to sample_video_1.mp4 or modify the code to point to your file).
 
-Run the detection script:
-
+*Run the detection script:
 python detect_anomalies.py
-Press 'q' to quit the video stream.
 
-Customization
+
+*Customization
 To change the detection threshold, modify the min_score_thresh parameter in the visualize_boxes_and_labels_on_image_array function call.
-
 To use a different model, update the MODEL_DATE and MODEL_NAME variables at the top of the script.
-
 You can extend the code to analyze detection patterns over time for anomaly detection.
 
 Extending for Anomaly Detection
 This project provides the foundation for building an anomaly detection system. Potential extensions include:
-
 Behavior Analysis: Track object movements over time to detect unusual patterns
-
 Object Counting: Monitor crowd sizes or vehicle counts for abnormal situations
-
 Zone Monitoring: Detect when objects enter restricted areas
-
 Abandoned Objects: Identify stationary objects that remain in place for too long
 
 Model Information
@@ -67,7 +60,6 @@ Performance Notes
 The system performs best with GPU acceleration
 
 On CPUs, you may need to reduce the input resolution for real-time performance
-
 Frame processing time depends on hardware capabilities
 
 Contributing
